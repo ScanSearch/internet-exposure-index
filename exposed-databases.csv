@@ -1,0 +1,11 @@
+datastore,hosts_30d
+mongodb,114624
+redis,65342
+mysql,18844
+influxdb,6329
+couchdb,825
+clickhouse,302
+cassandra,265
+postgresql,108
+elasticsearch,35
+memcached,14

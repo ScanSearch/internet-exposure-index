@@ -1,0 +1,8 @@
+service,hosts_30d
+ssh,591800
+ftp,155790
+proxmox,90006
+rdp,75488
+telnet,73301
+vnc,18805
+smb,58

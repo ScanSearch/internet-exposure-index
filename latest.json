@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-28T12:20:54Z",
+  "window_days": 30,
+  "freshest_scan": "2026-07-28",
+  "observed_hosts_30d": 11029065,
+  "exposed_datastores": {
+    "mongodb": 114624,
+    "redis": 65342,
+    "mysql": 18844,
+    "influxdb": 6329,
+    "couchdb": 825,
+    "clickhouse": 302,
+    "cassandra": 265,
+    "postgresql": 108,
+    "elasticsearch": 35,
+    "memcached": 14
+  },
+  "remote_access": {
+    "ssh": 591800,
+    "ftp": 155790,
+    "proxmox": 90006,
+    "rdp": 75488,
+    "telnet": 73301,
+    "vnc": 18805,
+    "smb": 58
+  },
+  "legacy_tls_hosts": 1986
+}

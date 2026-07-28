@@ -1,0 +1,2 @@
+date,observed_hosts_30d,mongodb,redis,elasticsearch,mysql,postgresql,memcached,legacy_tls
+2026-07-28,11029065,114624,65342,35,18844,108,14,1986
