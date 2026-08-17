@@ -2,7 +2,7 @@
 
 What is actually reachable on the public internet right now — exposed databases, remote-access ports and obsolete TLS — counted over a **rolling 30-day window** and refreshed weekly.
 
-**Updated:** 2026-08-10 · **Window:** last 30 days · **Most recent scan:** 2026-08-10
+**Updated:** 2026-08-17 · **Window:** last 30 days · **Most recent scan:** 2026-08-17
 
 Exposure numbers age badly. A host that answered on port 27017 last year may be patched, firewalled or gone, so a cumulative all-time count quietly inflates every figure it reports. Everything here is restricted to services observed in the last 30 days, and the window moves with each refresh.
 
@@ -12,16 +12,16 @@ Databases answering on the public internet:
 
 | Datastore | Hosts seen (30d) |
 |---|---:|
-| mongodb | 300,696 |
-| redis | 185,254 |
-| mysql | 77,253 |
-| influxdb | 9,947 |
-| couchdb | 2,184 |
-| clickhouse | 422 |
-| cassandra | 419 |
-| postgresql | 246 |
-| elasticsearch | 139 |
-| memcached | 74 |
+| mongodb | 484,813 |
+| redis | 316,243 |
+| mysql | 142,702 |
+| influxdb | 12,782 |
+| couchdb | 3,041 |
+| cassandra | 612 |
+| clickhouse | 535 |
+| postgresql | 390 |
+| elasticsearch | 210 |
+| memcached | 104 |
 
 ## Remote-access surface
 
@@ -29,24 +29,24 @@ The services that show up first in ransomware post-mortems:
 
 | Service | Hosts seen (30d) |
 |---|---:|
-| ssh | 2,500,217 |
-| ftp | 253,854 |
-| rdp | 196,910 |
-| telnet | 182,413 |
-| proxmox | 114,863 |
-| vnc | 93,269 |
-| smb | 5,867 |
+| ssh | 13,815,359 |
+| ftp | 357,406 |
+| telnet | 301,770 |
+| rdp | 210,512 |
+| vnc | 181,370 |
+| proxmox | 143,863 |
+| smb | 8,495 |
 
 ## TLS versions
 
-Obsolete TLS (1.0/1.1/SSLv3) still answers on **6,131** hosts in this window:
+Obsolete TLS (1.0/1.1/SSLv3) still answers on **8,673** hosts in this window:
 
 | Version | Hosts (30d) | Share |
 |---|---:|---:|
-| TLS 1.3 | 7,949,871 | 76.25% |
-| TLS 1.2 | 2,469,889 | 23.69% |
-| TLS 1.0 | 6,030 | 0.06% |
-| TLS 1.1 | 101 | 0.0% |
+| TLS 1.3 | 12,780,763 | 76.61% |
+| TLS 1.2 | 3,894,129 | 23.34% |
+| TLS 1.0 | 8,496 | 0.05% |
+| TLS 1.1 | 177 | 0.0% |
 
 ## Files
 
@@ -67,7 +67,7 @@ curl -s https://raw.githubusercontent.com/ScanSearch/internet-exposure-index/mai
 
 ## Method and honest limits
 
-Figures come from active scanning: a host is counted when a service answered during the last 30 days. Most-answered ports in this window: 443, 80, 8080, 22, 3000.
+Figures come from active scanning: a host is counted when a service answered during the last 30 days. Most-answered ports in this window: 443, 80, 22, 8080, 3000.
 
 **This is a sample of the internet, not a census.** It covers the ranges and ports that were scanned in the window, so treat the numbers as a floor and a trend, never as a total. Counts also mix genuinely misconfigured hosts with deliberate honeypots — every internet-wide scan has that problem, including the commercial ones.
 
