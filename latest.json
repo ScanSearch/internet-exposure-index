@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-26T05:15:01Z",
+  "generated_at": "2026-11-02T05:15:01Z",
   "window_days": 30,
-  "freshest_scan": "2026-10-26",
-  "observed_hosts_30d": 2159379,
+  "freshest_scan": "2026-10-30",
+  "observed_hosts_30d": 1642206,
   "exposed_datastores": {
-    "mysql": 50331,
-    "mongodb": 15944,
-    "cassandra": 118,
-    "redis": 67,
+    "mysql": 54885,
+    "mongodb": 10650,
+    "cassandra": 89,
+    "redis": 57,
     "postgresql": 9,
-    "influxdb": 7,
     "memcached": 7,
-    "elasticsearch": 2,
+    "influxdb": 4,
     "clickhouse": 1,
-    "couchdb": 1
+    "couchdb": 1,
+    "elasticsearch": 1
   },
   "remote_access": {
-    "rdp": 40622,
-    "ssh": 32101,
-    "ftp": 18058,
-    "telnet": 5604,
-    "vnc": 2926,
-    "proxmox": 47,
+    "rdp": 46487,
+    "ssh": 35940,
+    "ftp": 16367,
+    "telnet": 5358,
+    "vnc": 2934,
+    "proxmox": 22,
     "smb": 4
   },
-  "legacy_tls_hosts": 551
+  "legacy_tls_hosts": 398
 }

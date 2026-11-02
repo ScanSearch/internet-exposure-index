@@ -1,11 +1,11 @@
 datastore,hosts_30d
-mysql,50331
-mongodb,15944
-cassandra,118
-redis,67
+mysql,54885
+mongodb,10650
+cassandra,89
+redis,57
 postgresql,9
-influxdb,7
 memcached,7
-elasticsearch,2
+influxdb,4
 clickhouse,1
 couchdb,1
+elasticsearch,1
