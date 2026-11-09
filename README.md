@@ -2,7 +2,7 @@
 
 What is actually reachable on the public internet right now — exposed databases, remote-access ports and obsolete TLS — counted over a **rolling 30-day window** and refreshed weekly.
 
-**Updated:** 2026-11-02 · **Window:** last 30 days · **Most recent scan:** 2026-10-30
+**Updated:** 2026-11-09 · **Window:** last 30 days · **Most recent scan:** 2026-10-30
 
 Exposure numbers age badly. A host that answered on port 27017 last year may be patched, firewalled or gone, so a cumulative all-time count quietly inflates every figure it reports. Everything here is restricted to services observed in the last 30 days, and the window moves with each refresh.
 
@@ -12,15 +12,13 @@ Databases answering on the public internet:
 
 | Datastore | Hosts seen (30d) |
 |---|---:|
-| mysql | 54,885 |
-| mongodb | 10,650 |
-| cassandra | 89 |
-| redis | 57 |
+| mysql | 54,441 |
+| mongodb | 6,995 |
+| cassandra | 79 |
+| redis | 43 |
 | postgresql | 9 |
 | memcached | 7 |
-| influxdb | 4 |
-| clickhouse | 1 |
-| couchdb | 1 |
+| influxdb | 2 |
 | elasticsearch | 1 |
 
 ## Remote-access surface
@@ -29,23 +27,23 @@ The services that show up first in ransomware post-mortems:
 
 | Service | Hosts seen (30d) |
 |---|---:|
-| rdp | 46,487 |
-| ssh | 35,940 |
-| ftp | 16,367 |
-| telnet | 5,358 |
-| vnc | 2,934 |
-| proxmox | 22 |
+| rdp | 46,423 |
+| ssh | 34,973 |
+| ftp | 15,243 |
+| telnet | 5,143 |
+| vnc | 2,853 |
+| proxmox | 13 |
 | smb | 4 |
 
 ## TLS versions
 
-Obsolete TLS (1.0/1.1/SSLv3) still answers on **398** hosts in this window:
+Obsolete TLS (1.0/1.1/SSLv3) still answers on **316** hosts in this window:
 
 | Version | Hosts (30d) | Share |
 |---|---:|---:|
-| TLS 1.3 | 81,692 | 51.76% |
-| TLS 1.2 | 75,753 | 47.99% |
-| TLS 1.0 | 397 | 0.25% |
+| TLS 1.3 | 68,429 | 50.32% |
+| TLS 1.2 | 67,244 | 49.45% |
+| TLS 1.0 | 315 | 0.23% |
 | TLS 1.1 | 1 | 0.0% |
 
 ## Files
